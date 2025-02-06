@@ -1,0 +1,1 @@
+﻿public record CreatePostDto(string Title, string Content, Guid UserId);

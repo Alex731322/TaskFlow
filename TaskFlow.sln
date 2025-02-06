@@ -12,6 +12,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskFlow.Core", "TaskFlow.Core\TaskFlow.Core.csproj", "{C5B1462E-3268-44D2-993C-05A8738CC8C0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskFlow.Infrastructure", "TaskFlow.Infrastructure\TaskFlow.Infrastructure.csproj", "{7400CF55-CB93-421F-A113-E81B60F2A540}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5B1462E-3268-44D2-993C-05A8738CC8C0} = {C5B1462E-3268-44D2-993C-05A8738CC8C0}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskFlow.Tests", "TaskFlow.Tests\TaskFlow.Tests.csproj", "{4F8C3CAD-6F5B-4250-B3BF-E2325A1A2CC0}"
 EndProject
@@ -48,5 +51,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7B1CC05-93D8-4045-A062-752658A8FC70}
 	EndGlobalSection
 EndGlobal
